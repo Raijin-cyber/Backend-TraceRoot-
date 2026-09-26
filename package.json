@@ -3,12 +3,22 @@
   "version": "1.0.0",
   "description": "Service of traceroot",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "lint": "eslint .",
+    "lint-fix": "eslint --fix"
   },
   "keywords": [
     "server"
   ],
   "author": "Ujjwal Sharma",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^18.0.4",
+    "express": "^5.2.1",
+    "nodemon": "^3.1.14"
+  }
 }
